@@ -1,23 +1,243 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My first HTML</title>
+	<title>Curriculum vitae</title>
 	<style type="text/css">
-		h1{
-			color: red;
-		}
-		p{
-			color:blue;
-			background-color: yellow;
-		}
+			@import url('https://fonts.googleapis.com/css?family=Oswald');
+			
+			.general {
+			height: 735px;
+			width: 800px;
+			margin: 20px auto ; 
+			text-align: center;
+			}
+
+			.top {
+			background: MidnightBlue;
+			height: 50px;
+			width: 800px;
+			margin-top: -21px;
+    		margin-left: -10px;
+    		margin-right: -10px;
+    		border-right: 3px solid silver;
+    		border-left: 3px solid silver;
+			}
+
+			.top>h1 {
+			position: relative ;
+			top: 5px;
+			color: white ;
+			text-align: center;
+			}
+
+			.left {
+			background: linear-gradient(257deg, rgba(173,173,173,1) 0%, rgba(0,0,0,1) 100%);
+			width: 250px; 
+			height: 700px;
+			margin-top: -9px;
+			margin-left: -3px;
+			border-left: 3px solid silver;
+			border-bottom: 3px solid silver;
+			}
+
+			.left_block {
+			width: 250px; 
+			height: 600px;
+			text-align: center;
+			position: relative ;
+			top: 20px;
+			}
+
+			.left_block img {
+			width : 150px ;
+			height : 150px ;
+			border: 3px solid silver ;
+			border-radius: 50px ;
+			}
+
+			.left_block>p {
+			font-size: xx-large;
+			text-align: left;
+			color: white ;
+			font-weight: bold;
+			border-bottom: 3px solid yellow;
+			margin-left:10px;
+			margin-right:30px;
+			padding-bottom: 7px;
+			}
+
+			.left_block2 {
+			width: 200px; 
+			height: 180px;
+			text-align: center;
+			position: relative ;
+			top: 20px;
+			margin-left:20px;
+			}
+
+			.left_block2>p {
+			font-size: x-large;
+			text-align: center;
+			color: white ;
+			font-weight: normal;
+			}
+
+			td {
+			border-radius: 5px ;
+			color: white ;
+			}
+			#Java {
+			background: mediumorchid;
+			}
+			
+			#C_pl {
+			background: Tan ;
+			}
+			
+			#Php {
+			background: Green;
+			}
+			
+			#Ruby {
+			background: DarkOrange ;
+			}
+			
+			ul {
+			text-align: left;
+			color:white;
+			font-size: large;
+			}
+
+			.Info {
+			width:550px ;
+			height:700px ;
+			margin-top: -526px;
+			margin-left: 250px;
+			border-right: 3px solid silver;
+			border-bottom: 3px solid silver;
+			}
+			
+			.data {
+			border-bottom: 3px solid blue;
+			margin-left:10px;
+			margin-right:30px;
+			}
+	
+			.data>p {
+			text-align: left;
+			font-size: large;
+			padding-top: 20px;
+			padding-left: 10px;
+			color:MidnightBlue;
+			font-family: 'Oswald', sans-serif;
+			}
+			
+			#text1 {
+			text-align: left;
+			font-size: medium;
+			padding-top: 0px;
+			padding-left: 10px;
+			color:MidnightBlue;
+			font-family: Geneva;
+			}
+		
+			.skills>p {
+			text-align: left;
+			font-size: large;
+			padding-top: 20px;
+			padding-left: 10px;
+			color:MidnightBlue;
+			font-family: 'Oswald', sans-serif;
+			}
+			
+			.skills {
+			border-bottom: 3px solid blue;
+			margin-left:10px;
+			margin-right:30px;
+			}
+			
+			.me>p {
+			text-align: left;
+			font-size: large;
+			padding-top: 20px;
+			padding-left: 10px;
+			color:MidnightBlue;
+			font-family: 'Oswald', sans-serif;
+			}
+
+			.me {
+			border-bottom: 3px solid blue;
+			margin-left:10px;
+			margin-right:30px;
+			}
+			
+			a:link { color: blue; }
+			a:visited { color: purple; }
+			
+		
 	</style>
 </head>
 <body>
-	<h3>qwerty</h3>
-	<h1>qwerty</h1>
-	<h2>qwerty</h2>
-	<p>There are<br /> &#9728; so<strike> much </strike> <br />text</p>
-	<p style="color: magenta;">This is second paragraph</p>
-	<p>This is <tt>third3333t56t6</tt> paragraph</p>
+	<div class="general">
+		<div class="top">
+			<h1>Curriculum vitae</h1>
+			<div class="left">
+				<div class="left_block">
+					<img src="tester.jpg" alt = 'Здесь находится мое фото' title = 'Это мое фото'>
+					<p>Программный Программист</p>
+					<div class="left_block2">
+						<p><u>Языки программирования:</u></p>
+						<table width="200px">
+							<tr>
+								<td id="Java">Java</td>
+							</tr>
+						</table>
+						<table width="150px">
+							<tr>
+								<td id="C_pl">C++</td>
+							</tr>
+						</table>
+						<table width="100px">
+							<tr>
+								<td id="Php">PHP</td>
+							</tr>
+						</table>
+						<table width="120px">
+							<tr>
+								<td id="Ruby">Ruby on Rails</td>
+							</tr>
+						</table>
+						<p><u>Контакты:</u></p>
+						<ul>
+							<li><a href="https://twitter.com/?lang=ru">Twitter</a></li>
+							<li><a href="https://ru.wikipedia.org/wiki/Facebook">Facebook</a></li>
+							<li><a href="https://www.skype.com/ru/get-skype/">Skype</a></li>
+						</ul>
+					</div>
+						<div class="Info">
+							<div class="data">
+								<p><big><b>Дата рождения:</b></big></p>
+								<p id="text1">15 Июня 1995г</p>
+								<p><big><b>Место рождения:</b></big></p>
+								<p id="text1">город Киев</p>
+							</div>
+							<div class = "skills">
+								<p><big><b>Soft skills:</b></big></p>
+								<p id="text1">- Visual Studio</p>
+								<p id="text1">- Sublime Text</p>
+								<p id="text1">- AQtime</p>
+							</div>
+							<div class ="me">
+								<p><big><b>Обо мне:</b></big></p>
+								<p id="text1">- умение качественно работать</p>
+								<p id="text1">- добросовестность в работе</p>
+								<p id="text1">- умение быстро освоить новый программный продукт</p>
+								<p id="text1">- обладаю творческими способностями</p>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
